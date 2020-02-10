@@ -13,10 +13,9 @@ export default {
 
     data: {
         function() {
-            return {
-                message: "Who's using Roku",
-                userList: []
-            }
+                return {
+                    message: "Welcome to Ontario Tourism Project",
+                }
     },
 
     created: function() {
