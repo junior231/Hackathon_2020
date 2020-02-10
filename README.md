@@ -1,1 +1,2 @@
-# Hackathon_2020
+# Ontario Tourism Program
+## Contributors - Collins, Malek, Nick, Kat and Prabhjot
