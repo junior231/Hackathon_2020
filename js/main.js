@@ -1,8 +1,8 @@
 // imports come first
-// import UsersComponent from "./components/UsersComponent.js";
+import promotionComponent from "./components/promotionComponent.js";
 const router = new VueRouter ({
     routes: [
-      { path: "/", name: "home", component: UsersComponent }
+      { path: "/", name: "home", component: promotionComponent }
     ]
   })
   
@@ -13,7 +13,10 @@ const router = new VueRouter ({
     router,
 
     data: {
-
+      user: {
+        isLoggedIn: true,
+        settings: {}
+      }
     },
 
     methods: {
