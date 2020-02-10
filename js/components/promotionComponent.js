@@ -1,5 +1,5 @@
 // imports come first
-import promotionComponent from "./promotionComponent.js"
+
 export default {
     template: `
         <div class="container"
@@ -33,8 +33,5 @@ export default {
         }
     },
 
-    components: {
-        user: promotionComponent
-    }
 }
 }
