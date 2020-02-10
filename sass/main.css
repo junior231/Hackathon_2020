@@ -1,4 +1,83 @@
-#app {
-  background-color: 0;
+header {
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+
+header .logo {
+  height: 150px;
+  width: 60%;
+}
+
+body {
+  background-color: #fcfcfc;
+  font-family: 'Lato', sans-serif;
+}
+
+button {
+  background-color: #f76666;
+  padding: 5px;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+.hero {
+  margin-top: 40px;
+}
+
+.hero h2 {
+  text-align: center;
+}
+
+.hero p {
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+
+.locations {
+  margin: 20px 0 20px 0;
+}
+
+.locations h3 {
+  text-align: center;
+}
+
+.locations .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.locations .images img {
+  margin: 10px 0 10px 0;
+  width: 100%;
+}
+
+.locations button {
+  background-color: #f76666;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.video {
+  margin: 20px 0 20px 0;
+  width: 100%;
+}
+
+.video video {
+  width: 100%;
+}
+
+.mainFooter {
+  margin: 20px 0 0 0;
+  color: #111111;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=main.css.map */

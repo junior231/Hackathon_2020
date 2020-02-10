@@ -6,16 +6,20 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <link rel="stylesheet" href="/sass/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <title>Ontario Tourism Project</title>
 </head>
 <body>
     <main id="app">
         <header class="mainHeader">
             <!-- logo goes here -->
-            <div class="logo"></div>
+            <div class="logo">
+                <img src="images/logo-web.svg" alt="Logo">
+            </div>
             <!-- insert nav here -->
             <nav class="mainNav"></nav>
         </header>
+        <hr>
 
         <section class="content">
             <div class="hero">
@@ -28,29 +32,30 @@
                 <h3>Fun Locations to visit</h3>
                 <!-- images go here -->
                 <div class="images">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div>
+                        <img src="images/cn_tower_night_view.jpg" alt="CN Tower">
+                        <img src="images/niagara_falls_summer.jpg" alt="Niagara Falls">
+                        <img src="images/gateway_casino_london.jpg" alt="Gateway Casino London">
+                        <img src="images/Ripley's_aquarium_canada.jpg" alt="Ripleys Aquarium">
+                    </div>
                 </div>
                 <button>View More</button>
             </div>
             <hr>
 
             <!-- video goes here -->
-            <div class="video"></div>
+            <div class="video">
+                <video src="video/fake_vid.mp4" muted autoplay controls></video>
+            </div>
             <button>Book a Tour</button>
         </section>
 
     </main>
+    <hr>
 
     <footer class="mainFooter">
         <div class="social-media"></div>
-        <p>for more info visit www.ontariosummer.com<br>email:www.bruhsite.com<br>tel:6969696969</p>
+        <p>for more info visit www.ontariosummer.com<br>email:www.bruhsite.com<br>tel:647-696-96969</p>
     </footer>
     <script src="js/main.js" type="module"></script>
 </body>

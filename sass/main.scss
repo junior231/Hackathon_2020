@@ -1,3 +1,14 @@
-#app {
-    background-color: green($color: #000000);
+// import from modules
+@import 'modules/_header';
+
+body {
+    background-color: rgb(252, 252, 252);
+    font-family: 'Lato', sans-serif;
 }
+
+// content styles here 
+@import 'modules/_contentStyles';
+
+// footer styles
+@import 'modules/_footer';
+
