@@ -1,14 +1,22 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:8889
--- Generation Time: Feb 10, 2020 at 04:03 PM
+-- Host: 127.0.0.1:3306
+-- Generation Time: Feb 11, 2020 at 03:16 AM
 -- Server version: 5.7.26
--- PHP Version: 7.3.7
+-- PHP Version: 7.2.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `database`
@@ -20,40 +28,29 @@ SET time_zone = "+00:00";
 -- Table structure for table `tbl_user`
 --
 
-CREATE TABLE `tbl_user` (
-  `ID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `tbl_user`;
+CREATE TABLE IF NOT EXISTS `tbl_user` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(30) DEFAULT NULL,
   `last_name` varchar(30) DEFAULT NULL,
   `user_email` varchar(50) DEFAULT NULL,
   `user_password` varchar(30) DEFAULT NULL,
   `user_country` varchar(30) DEFAULT NULL,
+  `hash` varchar(32) DEFAULT NULL,
   `sub_start` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `last_updated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `last_updated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `verified` int(1) NOT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_user`
 --
 
-INSERT INTO `tbl_user` (`ID`, `first_name`, `last_name`, `user_email`, `user_password`, `user_country`, `sub_start`, `last_updated`) VALUES
-(1, 'malek', 'farag', 'email@email.com', 'test', 'canada', '2020-02-10 16:02:54', '2020-02-10 16:02:54');
+INSERT INTO `tbl_user` (`user_id`, `first_name`, `last_name`, `user_email`, `user_password`, `user_country`, `hash`, `sub_start`, `last_updated`, `verified`) VALUES
+(32, 'Malek', 'Farag', 'FaragMalek14@gmail.com', '1234', 'Canada', '3871bd64012152bfb53fdf04b401193f', '2020-02-10 23:02:57', '2020-02-11 03:11:13', 0);
+COMMIT;
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `tbl_user`
---
-ALTER TABLE `tbl_user`
-  ADD PRIMARY KEY (`ID`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `tbl_user`
---
-ALTER TABLE `tbl_user`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
