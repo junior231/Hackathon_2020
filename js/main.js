@@ -2,37 +2,11 @@
 import appPage from './modules/appPage.js';
 import errorPage from './modules/errorPage.js';
 
-
-const router = new VueRouter ({
-    mode: 'history',
-    routes: [
-      { path: "/", name: "Home", component: appPage},
-      { path: "*", name: "Error", component: errorPage}
-    ]
-  })
-
-  Vue.component('location',{
-    template: `
-    <div id="locations">
-            <h2>Popular Locations</h2>
-            <p>Chosen By Our <span>travel experts</span></p>
-            <div v-for='location in locations' class="location">
-                <h3>{{location.loc}}</h3>
-                <img v-bind:src="location.img" alt="location image">
-                <p>{{location.desc}}</p>
-                <div class="divide"></div>
-            </div>
-            
-        </div>
-    `
-  })
-  
   
   var vm = new Vue({
     el: "#app",
   
-    router: router,
-    render: h => h('router-view'),
+ 
 
     data: {
       user: {

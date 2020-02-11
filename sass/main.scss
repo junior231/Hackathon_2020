@@ -7,3 +7,56 @@
 @import './modules/signUp';
 @import './modules/footer';
  
+
+@media only screen and (min-width: 650px){
+    .webcon{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #hero{
+        .con{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        h1{
+        margin: auto;
+        }
+        img{
+            width: 30%;
+        }
+    }
+}
+    
+
+@media only screen and (min-width: 950px){
+    #hero{
+        p{
+            font-size: $header2;
+        }
+        h1{
+            font-size: 50px;
+        }
+        img{
+            width: 40%;
+        }
+    }
+
+    #locations{
+        h2{
+            font-size: 40px;
+        }
+
+        .location{
+            h3{
+                font-size: 36px;
+            }
+            img{
+                width: 50%;
+            }
+            p{
+                max-width: 1000px;
+                margin: 20px auto;
+            }
+        }
+    }
+}
