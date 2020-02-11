@@ -1,0 +1,20 @@
+#hero{
+    width: 100%;
+    padding-top: 60px;
+    video{
+        width: 100%;
+    }
+    h1{
+        margin-top: 20px;
+        width: 100%;
+        font-size: $header1;
+    }
+    p{
+        font-size: $para1;
+        margin: 0 5px;
+        margin-top: 20px;
+    }
+    img{
+        margin: 20px 100px;
+    }
+}

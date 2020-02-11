@@ -1,0 +1,47 @@
+// define variable 
+
+//colors
+$color1: #68ACC1;
+$color2: #B6D4DB;
+$color3: #D3DEE0;
+$color4: #FABB2F;
+
+//typography
+$header1: 36px;
+$header2: 24px;
+
+$para1: 18px;
+$para2: 14px;
+$para3: 11px;
+
+
+//global rules
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0 auto;
+
+    nav{
+        ul{
+            list-style: none;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.divide{
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+    background: $color1;
+}
+
+
+

@@ -1,0 +1,87 @@
+.header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+
+    .white{
+        margin: 0 auto;
+        padding: 5px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #ffffff;
+    }
+
+    .mobileLogo{
+        width: 40px;
+        z-index:2;
+    }
+
+    .deskLogo{
+        display: none;
+        z-index:2;
+    }
+
+    .burger{
+        align-self: center;
+        width: 26px;
+        cursor: pointer;
+        z-index:2;
+        .bLine{
+            z-index:2;
+            border-radius: 1px;
+            height: 4px;
+            margin-top: 4px;
+            background-color: black;
+        }
+    }
+    .mainNav{
+        position: relative;
+        z-index: -1;
+        width: 100%;
+        padding-bottom: 2px;
+
+        pointer-events: none;
+        transform: translateY(-500px);
+
+        transition: all .4s ease;
+        .navList{
+            padding: 10px auto;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a{
+                color: #4D4D4F;
+                text-decoration: none;
+                width: 85%;
+                padding: 30px 0;
+
+                border-bottom: solid 1px $color1;
+
+                transition: all .1s ease;
+            }
+
+            a:hover{
+                color: $color1;
+            }
+
+            a:last-child{
+                color: #ffffff;
+                background-color: $color1;
+            }
+
+        }
+    }
+
+    .navOn{
+        background-color: white;
+        pointer-events: all;
+        transform: translateY(0px);
+    }
+}
